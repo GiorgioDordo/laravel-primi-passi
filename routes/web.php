@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// home
+Route::get('/home', function () {
 $title = "PRODOTTI";
 $productList = ["Mele",
                 "banane",
@@ -21,3 +22,11 @@ $productList = ["Mele",
                 "kiwi",
                 "fragole"];
 return view('home',compact("title", "productList"));});
+
+Route::get('/animals', function(){
+    $title = "ANIMALS";
+    $animalList = ["Gatto",
+                    "Cane",
+                    "Pecora",
+                    "Volpe"];
+    return view('animals',compact("title","animalList"));})->name('animals');
