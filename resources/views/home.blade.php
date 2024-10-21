@@ -12,10 +12,10 @@
     <main>
         <div class="container mt-5">
             <h1 class="text-center">
-                <strong>{{$titolo}}</strong>
+                <strong>{{$title}}</strong>
             </h1>
             <ul>
-                @foreach ($lista as $list)
+                @foreach ($productList as $list)
                 <li class="text-center list-unstyled">
                     {{$list}}
                 </li>

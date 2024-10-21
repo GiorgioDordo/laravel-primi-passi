@@ -20,9 +20,4 @@ $productList = ["Mele",
                 "arance",
                 "kiwi",
                 "fragole"];
-return view('home',
-[
-    "titolo" => $title,
-    "lista" => $productList
-]
-);});
+return view('home',compact("title", "productList"));});
