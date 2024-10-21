@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-return view('home
-');});
+$title = "PRODOTTI";
+$productList = ["Mele",
+                "banane",
+                "arance",
+                "kiwi",
+                "fragole"];
+return view('home',
+[
+    "titolo" => $title,
+    "lista" => $productList
+]
+);});

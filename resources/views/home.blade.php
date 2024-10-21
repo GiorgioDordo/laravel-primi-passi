@@ -12,8 +12,15 @@
     <main>
         <div class="container mt-5">
             <h1 class="text-center">
-                <strong>Welcome to laravel</strong>
+                <strong>{{$titolo}}</strong>
             </h1>
+            <ul>
+                @foreach ($lista as $list)
+                <li class="text-center list-unstyled">
+                    {{$list}}
+                </li>
+                @endforeach
+            </ul>
         </div>
     </main>
 
